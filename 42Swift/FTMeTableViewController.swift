@@ -8,14 +8,17 @@
 
 import UIKit
 
-class MeTableViewController: UITableViewController {
+class FTMeTableViewController: UITableViewController {
     
     var userList = [FTUser]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FTLoadingAnimatorView().addLoadingAnimator(in: self.navigationController?.view)
         FTApi().getAllUsers(page: 0) { (error, users) in
+            FTLoadingAnimatorView().removeLoadingAnimator(from: self.navigationController?.view)
+            
             guard error == nil && users != nil else {
                 return
             }
@@ -27,6 +30,8 @@ class MeTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
+    
+    
 
     // MARK: - Table view data source
 

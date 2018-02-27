@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		2BBD7B97B07E0672A799C3DF /* Pods_42SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6FF1C730F34FD9DB301B36 /* Pods_42SwiftUITests.framework */; };
 		50814E2520456BED00B148C6 /* FTApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E2420456BED00B148C6 /* FTApi.swift */; };
-		50814E272045712F00B148C6 /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E262045712F00B148C6 /* MeTableViewController.swift */; };
+		50814E272045712F00B148C6 /* FTMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E262045712F00B148C6 /* FTMeTableViewController.swift */; };
 		50814E292045718B00B148C6 /* FTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E282045718B00B148C6 /* FTUser.swift */; };
-		50814E2B2045764B00B148C6 /* ProfilTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E2A2045764B00B148C6 /* ProfilTableViewController.swift */; };
+		50814E2B2045764B00B148C6 /* FTProfilTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E2A2045764B00B148C6 /* FTProfilTableViewController.swift */; };
+		50814E2D20459CE600B148C6 /* FTLoadingAnimator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50814E2C20459CE600B148C6 /* FTLoadingAnimator.xib */; };
+		50814E2F20459F7B00B148C6 /* FTLoadingAnimatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50814E2E20459F7B00B148C6 /* FTLoadingAnimatorView.swift */; };
 		508F36A220456276009DBEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508F36A120456276009DBEDE /* AppDelegate.swift */; };
 		508F36A720456276009DBEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508F36A520456276009DBEDE /* Main.storyboard */; };
 		508F36A920456276009DBEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508F36A820456276009DBEDE /* Assets.xcassets */; };
@@ -44,9 +46,11 @@
 		0C20048F084A3D479AD67666 /* Pods-42SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-42SwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-42SwiftUITests/Pods-42SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A5E6DDE7CE5C7C9569CAB07 /* Pods_42SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_42SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50814E2420456BED00B148C6 /* FTApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTApi.swift; sourceTree = "<group>"; };
-		50814E262045712F00B148C6 /* MeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
+		50814E262045712F00B148C6 /* FTMeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTMeTableViewController.swift; sourceTree = "<group>"; };
 		50814E282045718B00B148C6 /* FTUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUser.swift; sourceTree = "<group>"; };
-		50814E2A2045764B00B148C6 /* ProfilTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilTableViewController.swift; sourceTree = "<group>"; };
+		50814E2A2045764B00B148C6 /* FTProfilTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTProfilTableViewController.swift; sourceTree = "<group>"; };
+		50814E2C20459CE600B148C6 /* FTLoadingAnimator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTLoadingAnimator.xib; sourceTree = "<group>"; };
+		50814E2E20459F7B00B148C6 /* FTLoadingAnimatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTLoadingAnimatorView.swift; sourceTree = "<group>"; };
 		508F369E20456276009DBEDE /* 42Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 42Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		508F36A120456276009DBEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		508F36A620456276009DBEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,9 +127,11 @@
 				508F36A120456276009DBEDE /* AppDelegate.swift */,
 				50814E2420456BED00B148C6 /* FTApi.swift */,
 				50814E282045718B00B148C6 /* FTUser.swift */,
-				50814E262045712F00B148C6 /* MeTableViewController.swift */,
-				50814E2A2045764B00B148C6 /* ProfilTableViewController.swift */,
+				50814E2A2045764B00B148C6 /* FTProfilTableViewController.swift */,
+				50814E262045712F00B148C6 /* FTMeTableViewController.swift */,
 				508F36A520456276009DBEDE /* Main.storyboard */,
+				50814E2C20459CE600B148C6 /* FTLoadingAnimator.xib */,
+				50814E2E20459F7B00B148C6 /* FTLoadingAnimatorView.swift */,
 				508F36A820456276009DBEDE /* Assets.xcassets */,
 				508F36AA20456276009DBEDE /* LaunchScreen.storyboard */,
 				508F36AD20456276009DBEDE /* Info.plist */,
@@ -291,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				508F36AC20456276009DBEDE /* LaunchScreen.storyboard in Resources */,
+				50814E2D20459CE600B148C6 /* FTLoadingAnimator.xib in Resources */,
 				508F36A920456276009DBEDE /* Assets.xcassets in Resources */,
 				508F36A720456276009DBEDE /* Main.storyboard in Resources */,
 			);
@@ -472,8 +479,9 @@
 				50814E2520456BED00B148C6 /* FTApi.swift in Sources */,
 				50814E292045718B00B148C6 /* FTUser.swift in Sources */,
 				508F36A220456276009DBEDE /* AppDelegate.swift in Sources */,
-				50814E272045712F00B148C6 /* MeTableViewController.swift in Sources */,
-				50814E2B2045764B00B148C6 /* ProfilTableViewController.swift in Sources */,
+				50814E272045712F00B148C6 /* FTMeTableViewController.swift in Sources */,
+				50814E2F20459F7B00B148C6 /* FTLoadingAnimatorView.swift in Sources */,
+				50814E2B2045764B00B148C6 /* FTProfilTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
