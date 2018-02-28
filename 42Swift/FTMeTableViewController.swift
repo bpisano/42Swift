@@ -27,6 +27,7 @@ class FTMeTableViewController: UITableViewController {
             self.userList = self.userList.sorted(by: { (user1, user2) -> Bool in
                 return user1.username < user2.username
             })
+            
             self.tableView.reloadData()
         }
     }
